@@ -1,10 +1,8 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
-const path = require('path');
 
 module.exports = (app) => {
-
 app.set("view engine", "hbs");
     app.engine(
 	"hbs",
@@ -15,10 +13,20 @@ app.set("view engine", "hbs");
         partialsDir: __dirname + "/views",
 	})
 );
-// app.use("view engine");
-   app.use(bodyParser.urlencoded({extended: true}));
 
-    app.use(express.static('static'));
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(express.static('static'));
+
+};
+
+
+
+
+
+
+
+
 
 
 
@@ -43,4 +51,3 @@ app.set("view engine", "hbs");
     // app.use('/views', express.static('views'));
     // app.use('views', express.static(__dirname + './views'));
 
-};
