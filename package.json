@@ -1,16 +1,19 @@
 {
-    "name": "name",
+    "name": "cubicleapp",
     "description": "description",
     "authors": "author",
     "version": "1.0.0",
     "main": "pathToMain",
     "dependencies": {
         "body-parser": "^1.19.0",
+        "dotenv": "^10.0.0",
         "express": "^4.17.1",
         "express-handlebars": "^3.1.0",
+        "mongodb": "^4.1.0",
+        "mongoose": "^5.13.5",
         "uniqid": "^5.0.3"
     },
     "devDependencies": {
-        "nodemon": "^1.19.2"
+        "nodemon": "^1.19.4"
     }
 }
