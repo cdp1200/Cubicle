@@ -9,7 +9,7 @@ const cubeSchema = new Schema({
   description: String,
   imageUrl: String,
   difficultyLevel: Number,
-  // accessories: [{ type: Schema.Types.ObjectId, ref: 'Accessory'}]
+  accessories: [{ type: Schema.Types.ObjectId, ref: 'Accessory'}]
 
 })
 
