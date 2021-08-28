@@ -6,7 +6,6 @@ const accessorySchema = new Schema({
     name: String,
     description: String, 
     imageUrl: String,
-    // Cubes: [{type: Schema.Types.ObjectId, Cubes: Cubes}]
 });
 
 const Accessory = mongoose.model("Accessory", accessorySchema);
